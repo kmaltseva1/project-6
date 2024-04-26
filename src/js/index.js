@@ -1,3 +1,4 @@
 import '../scss/style.scss'
-// import Swiper from 'swiper'
-// import 'swiper/scss'
+import './aside.js'
+import './btn.js'
+import './swiper.js'

@@ -9,10 +9,9 @@ html {
 }
 
 body {
-  max-width: 1440px;
   min-height: 100%;
   padding: 0;
-  margin: 0 auto;
+  margin: 0;
   font-size: 14px;
   line-height: 18px;
   color: #1b1c21;
@@ -20,24 +19,14 @@ body {
   background: #f8f8f8;
   position: relative;
 }
-.no-scroll {
-  position: fixed;
-  width: 100%;
-  height: 100%;
+.lock {
+  overflow: hidden;
+}
+.body_wrapper {
+  margin: 0 auto;
+  max-width: 1440px;
 }
 
-.main {
-  flex: 1 0 auto;
-}
-
-img[hidden] {
-  display: none;
-}
-@media (min-width: 321px) {
-  img[hidden] {
-    display: block;
-  }
-}
 img {
   max-width: 100%;
   display: block;
@@ -49,8 +38,5 @@ a {
 
 ul[class] {
   list-style: none;
-}
-ul[class],
-ol[class] {
   padding: 0;
 }

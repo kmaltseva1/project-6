@@ -1,0 +1,98 @@
+.devices {
+  margin-bottom: 24px;
+  &__content {
+    box-sizing: border-box;
+    width: 100%;
+    line-height: 24px;
+    color: #7e7e82;
+    text-transform: uppercase;
+    letter-spacing: -0.2px;
+    background-image: linear-gradient(270deg, #f8f8f8 0%, #ffffff 100%);
+    border-top: 1px solid #d9fff5;
+  }
+  &__title {
+    margin: 0;
+    font-size: 16px;
+    font-family: 'TTLakes';
+    font-weight: 500;
+    padding: 16px;
+  }
+  &__title {
+    margin: 0;
+    font-size: 16px;
+  }
+  &__container {
+    height: 100%;
+  }
+  &__list {
+    display: flex;
+    margin-left: 20px;
+    height: 160px;
+  }
+
+  &__item {
+    position: relative;
+    box-sizing: border-box;
+    width: 240px;
+    height: 160px;
+    background: #ffffff;
+    border: 1px solid #eaeaea;
+    border-radius: 6px;
+    margin-right: 10px;
+  }
+
+  &__item-title {
+    font-family: 'TTLakes';
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+  }
+  &__item-link {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/icons/go.svg);
+  }
+  &__btn {
+    display: none;
+    outline: none;
+  }
+}
+.content-height--l {
+  height: auto;
+}
+@media screen and (min-width: 768px) {
+  .devices {
+    margin-bottom: 36px;
+    &__list {
+      flex-wrap: wrap;
+    }
+    &__item {
+      width: 224px;
+      margin-right: 24px;
+      margin-bottom: 16px;
+    }
+    &__btn {
+      display: block;
+      margin: 8px 0 0 24px;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .devices {
+    margin-bottom: 50px;
+  }
+  &__item {
+    width: 240px;
+    margin-right: 32px;
+  }
+  &__btn {
+    margin-left: 32px;
+  }
+}
