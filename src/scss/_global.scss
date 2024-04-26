@@ -16,7 +16,7 @@ body {
   line-height: 18px;
   color: #1b1c21;
   font-family: 'TTLakes';
-  background: #f8f8f8;
+  background: $decoration-color-5;
   position: relative;
 }
 .lock {
@@ -39,4 +39,8 @@ a {
 ul[class] {
   list-style: none;
   padding: 0;
+}
+
+.main--active {
+  opacity: 0.3;
 }

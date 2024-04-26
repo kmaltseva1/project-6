@@ -1,6 +1,6 @@
 .services-section {
   display: block;
-  background: #f8f8f8;
+  background: $decoration-color-5;
   &__warapper-header {
     display: flex;
     column-gap: 0px;
@@ -23,7 +23,7 @@
     border-radius: 5px;
     width: 4px;
     height: 40px;
-    background: #41f6d7;
+    background: $decoration-color-1;
   }
   &__application-list {
     display: none;
@@ -50,15 +50,15 @@
     margin-right: 30px;
     padding: 8px 16px;
   }
-  &__link:nth-child(1) {
-    background: #ffffff;
-    border: 2px solid #b8ffec;
+  &__link:hover {
+    background: $decoration-color-2;
+    border: 2px solid $decoration-color-1;
     border-radius: 6px;
     padding: 8px 16px;
     margin-left: 16px;
   }
   &__link a {
-    color: #7e7e82;
+    color: $decoration-color-3;
     &--margin {
       margin-left: 16px;
     }
@@ -82,8 +82,8 @@
   }
   &__btn {
     display: flex;
-    background-color: #f8f8f8;
-    border: #f8f8f8;
+    background-color: $decoration-color-5;
+    border: $decoration-color-5;
     margin-left: 3px;
     margin-bottom: 16px;
     cursor: pointer;

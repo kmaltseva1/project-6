@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  // max-width: 1440px;
+  max-width: 1440px;
   &-menu {
     position: absolute;
     height: 100%;
@@ -11,21 +11,9 @@
     position: fixed;
     transform: translateX(-320px);
   }
-}
-.wrapper-menu--active {
-  display: block;
-  background-color: rgba($color: #ffffff, $alpha: 0.8);
-  transition: all 1ms;
-  // min-width: 2500px;
-}
-
-.active {
-  transform: translateX(100%);
-  transition: all 1s;
-}
-.close {
-  transform: translateX(-100%);
-  transition: all 500ms;
+  &--active {
+    opacity: 0.2;
+  }
 }
 
 .aside {
@@ -33,7 +21,7 @@
   display: flex;
   box-shadow: rgba(14, 24, 80, 0.2) 16px 0px 52px;
   flex-direction: column;
-  background-color: white;
+  background-color: $decoration-color-2;
   height: 2025px;
   width: 100vw;
   &__header {
@@ -75,7 +63,7 @@
   }
 
   &__link:hover {
-    color: #7e7e82;
+    color: $decoration-color-3;
   }
   &__link:hover::before {
     content: '';
@@ -85,7 +73,7 @@
     border-radius: 5px;
     width: 4px;
     height: 35px;
-    background: #41f6d7;
+    background: $decoration-color-1;
   }
 
   &__contact {
@@ -102,17 +90,25 @@
   &__mail {
     margin-bottom: 14px;
     margin-top: 12px;
-    color: black;
+    color: $decoration-color-7;
     font-size: 16px;
     font-weight: 500;
     margin-left: 16px;
   }
   &__phone {
-    color: black;
+    color: $decoration-color-7;
     font-family: 'TTLakes';
     font-size: 24px;
     font-weight: 700;
     margin-left: 16px;
+  }
+  &--active {
+    transform: translateX(100%);
+    transition: all 1s;
+  }
+  &--close {
+    transform: translateX(-100%);
+    transition: all 500ms;
   }
 }
 
@@ -129,7 +125,7 @@
   margin-left: 16px;
 }
 .select-language__item:hover {
-  color: #7e7e82;
+  color: $decoration-color-3;
 }
 .select-language__item {
   margin-top: 10px;
@@ -158,9 +154,7 @@
       transform: translateX(0%);
     }
   }
-  .wrapper-menu--active {
-    min-width: 1440px;
-  }
+
   .aside {
     display: flex;
     box-shadow: none;
@@ -170,9 +164,9 @@
     &__link:last-child {
       margin-bottom: 250px;
     }
-  }
-  .active {
-    transform: none;
-    background-color: rgba($color: #ffffff, $alpha: 0.8);
+    &--active {
+      transform: none;
+      background-color: rgba($color: $decoration-color-2, $alpha: 0.8);
+    }
   }
 }
