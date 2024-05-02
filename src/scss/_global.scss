@@ -40,7 +40,11 @@ ul[class] {
   list-style: none;
   padding: 0;
 }
-
+@media only screen and (min-width: 1440px) {
+  .main {
+    padding-left: 320px;
+  }
+}
 .main--active {
   opacity: 0.3;
 }

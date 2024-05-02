@@ -104,8 +104,7 @@
   &__table-tr {
     height: 64px;
     margin: 16px;
-    border-color: $decoration-color-4;
-    border-top: 1px solid;
+    border: $decoration-color-4 1px solid;
   }
   &__table-tr:first-child {
     border: none;

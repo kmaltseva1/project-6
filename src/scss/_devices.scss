@@ -20,16 +20,15 @@
     font-weight: 500;
     padding: 16px;
   }
-  &__title {
-    margin: 0;
-    font-size: 16px;
+
+  &__swiper {
+    padding-left: 16px;
   }
   &__container {
     height: 100%;
   }
   &__list {
     display: flex;
-    margin-left: 20px;
     height: 160px;
   }
 
@@ -72,6 +71,12 @@
 @media screen and (min-width: 768px) {
   .devices {
     margin-bottom: 36px;
+    &__title {
+      padding-left: 24px;
+    }
+    &__swiper {
+      padding-left: 24px;
+    }
     &__list {
       flex-wrap: wrap;
     }
@@ -90,12 +95,18 @@
 @media screen and (min-width: 1440px) {
   .devices {
     margin-bottom: 50px;
-  }
-  &__item {
-    width: 240px;
-    margin-right: 32px;
-  }
-  &__btn {
-    margin-left: 32px;
+    &__title {
+      padding-left: 32px;
+    }
+    &__swiper {
+      padding-left: 32px;
+    }
+    &__item {
+      width: 240px;
+      margin-right: 32px;
+    }
+    &__btn {
+      margin-left: 32px;
+    }
   }
 }

@@ -1,11 +1,12 @@
 .services-section {
   display: block;
   background: $decoration-color-5;
+
   &__warapper-header {
     display: flex;
     column-gap: 0px;
     justify-content: space-between;
-    margin-top: 42px;
+    padding-top: 42px;
   }
   &__header {
     position: relative;
@@ -35,9 +36,6 @@
   }
   &__application-list-item span {
     margin-right: 10px;
-  }
-  &__nav-menu {
-    margin-bottom: 40px;
   }
   &__list {
     display: flex;
@@ -102,6 +100,7 @@
     flex-direction: column;
     margin: 0;
     margin-bottom: 24px;
+    margin-top: 40px;
   }
   &__img {
     box-sizing: border-box;

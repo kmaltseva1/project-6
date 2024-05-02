@@ -19,7 +19,7 @@
 .aside {
   z-index: 10;
   display: flex;
-  box-shadow: rgba(14, 24, 80, 0.2) 16px 0px 52px;
+
   flex-direction: column;
   background-color: $decoration-color-2;
   height: 2025px;
@@ -106,6 +106,7 @@
   &--active {
     transform: translateX(100%);
     transition: all 1s;
+    box-shadow: rgba(14, 24, 80, 0.2) 16px 0px 52px;
   }
   &--close {
     transform: translateX(-100%);
@@ -149,7 +150,7 @@
   .wrapper {
     flex-direction: row;
     &-menu {
-      position: static;
+      position: fixed;
       transform: translateX(0%);
     }
   }
