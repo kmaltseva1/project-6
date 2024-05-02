@@ -172,6 +172,9 @@
     &__container {
       display: none;
     }
+    &__title {
+      padding-left: 24px;
+    }
   }
   .container {
     padding: 0 24px;
@@ -196,6 +199,9 @@
       width: 95%;
       margin: 0 32px;
       margin-bottom: 32px;
+    }
+    &__title {
+      padding-left: 32px;
     }
   }
   .container {

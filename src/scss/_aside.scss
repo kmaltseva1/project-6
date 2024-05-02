@@ -112,7 +112,7 @@
     transform: translateX(-100%);
     transition: all 500ms;
   }
-  &__footer {
+  &__footer-btn {
     margin-top: auto;
   }
 }
@@ -140,9 +140,6 @@
 @media only screen and (min-width: 320px) {
   .aside {
     width: 320px;
-    &__link:last-child {
-      margin-bottom: 40px;
-    }
   }
 }
 
@@ -158,19 +155,12 @@
   .aside {
     display: flex;
     box-shadow: none;
-    height: 2025px;
     &__back-btn {
       display: none;
-    }
-    &__link:last-child {
-      margin-bottom: 170px;
     }
     &--active {
       transform: none;
       background-color: rgba($color: $decoration-color-2, $alpha: 0.8);
-    }
-    &__footer {
-      margin-top: 0;
     }
   }
 }
