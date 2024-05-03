@@ -85,6 +85,8 @@
 .services-section {
   display: block;
   background: #f8f8f8; }
+  .services-section__nav-menu {
+    padding-left: 16px; }
   .services-section__warapper-header {
     display: flex;
     -moz-column-gap: 0px;
@@ -120,8 +122,8 @@
     overflow: hidden; }
   .services-section__link {
     width: 250px;
-    margin-right: 30px;
-    padding: 8px 16px; }
+    margin-right: 40px;
+    padding: 8px; }
   .services-section__link:hover {
     background: #ffffff;
     border: 2px solid #41f6d7;
@@ -132,13 +134,13 @@
     color: #7e7e82; }
     .services-section__link a--margin {
       margin-left: 16px; }
+  .services-section__wrapper-text {
+    padding-left: 16px; }
   .services-section__text {
-    padding: 0 16px;
     line-height: 18px;
     margin-bottom: 16px;
     letter-spacing: 0.2px; }
     .services-section__text--more {
-      padding: 0 16px;
       font-size: 14px;
       line-height: 18px;
       margin-bottom: 16px;
@@ -181,10 +183,26 @@
     overflow: scroll; } }
 
 @media only screen and (min-width: 768px) {
+  .services-section__header {
+    margin-left: 24px; }
+  .services-section__header::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: -24px;
+    border-radius: 5px;
+    width: 4px;
+    height: 40px;
+    background: #41f6d7; }
+  .services-section__nav-menu {
+    padding-left: 24px; }
   .services-section__wrapper-content {
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 32px; }
+  .services-section__wrapper-text {
+    padding-left: 24px; }
   .services-section__img {
     margin-right: 32px;
     min-width: 50%;
@@ -194,8 +212,7 @@
 
 @media only screen and (min-width: 1120px) {
   .services-section__list {
-    overflow: inherit; }
-  .services-section__list {
+    overflow: inherit;
     flex-wrap: wrap; }
   .services-section__link {
     display: inline-block;
@@ -204,6 +221,22 @@
     width: min-content; } }
 
 @media screen and (min-width: 1440px) {
+  .services-section__header {
+    margin-left: 32px; }
+  .services-section__header::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: -32px;
+    border-radius: 5px;
+    width: 4px;
+    height: 40px;
+    background: #41f6d7; }
+  .services-section__nav-menu {
+    padding-left: 32px; }
+  .services-section__wrapper-text {
+    padding-left: 32px; }
   .services-section__img {
     min-width: 50%;
     margin: 0 32px 0 38px; }
