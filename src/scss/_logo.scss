@@ -1,6 +1,4 @@
 .brands {
-  padding-bottom: 24px;
-
   &__content {
     box-sizing: border-box;
     width: 100%;
@@ -97,7 +95,6 @@
 
 @media screen and (min-width: 768px) {
   .brands {
-    padding-bottom: 32px;
     &__title {
       padding-left: 24px;
     }
@@ -130,7 +127,6 @@
 }
 @media screen and (min-width: 1440px) {
   .brands {
-    padding-bottom: 50px;
     &__title {
       padding-left: 32px;
     }

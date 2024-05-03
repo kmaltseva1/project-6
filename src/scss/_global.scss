@@ -40,11 +40,50 @@ ul[class] {
   list-style: none;
   padding: 0;
 }
-@media only screen and (min-width: 1440px) {
-  .main_size {
-    padding-left: 320px;
+.main {
+  &--active {
+    opacity: 0.3;
+  }
+  &__services-section {
+    padding-top: 42px;
+  }
+  &__brands {
+    padding-bottom: 24px;
+  }
+  &__devices {
+    margin-bottom: 24px;
+  }
+  &__price {
+    margin-bottom: 12px;
   }
 }
-.main--active {
-  opacity: 0.3;
+
+@media only screen and (min-width: 768px) {
+  .main {
+    &__brands {
+      padding-bottom: 32px;
+    }
+    &__devices {
+      margin-bottom: 36px;
+    }
+    &__price {
+      margin-bottom: 37px;
+    }
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .main {
+    &__brands {
+      padding-bottom: 50px;
+    }
+    &__devices {
+      margin-bottom: 50px;
+    }
+    &_size_l {
+      padding-left: 320px;
+    }
+    &__price {
+      margin-bottom: 95px;
+    }
+  }
 }

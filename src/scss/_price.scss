@@ -1,5 +1,4 @@
 .price {
-  margin-bottom: 12px;
   &__content {
     box-sizing: border-box;
     width: 100%;
@@ -160,7 +159,6 @@
 }
 @media screen and (min-width: 768px) {
   .price {
-    margin-bottom: 37px;
     &__table {
       display: table;
       width: 720px;
@@ -194,7 +192,6 @@
 
 @media screen and (min-width: 1440px) {
   .price {
-    margin-bottom: 95px;
     &__table {
       width: 95%;
       margin: 0 32px;
