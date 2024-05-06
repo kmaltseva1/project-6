@@ -124,12 +124,14 @@
     width: 250px;
     margin-right: 40px;
     padding: 8px; }
+  .services-section__link:first-child {
+    background: #ffffff;
+    outline: 1px solid #41f6d7;
+    border-radius: 5px; }
   .services-section__link:hover {
     background: #ffffff;
-    border: 2px solid #41f6d7;
-    border-radius: 6px;
-    padding: 8px 16px;
-    margin-left: 16px; }
+    outline: 1px solid #41f6d7;
+    border-radius: 5px; }
   .services-section__link a {
     color: #7e7e82; }
     .services-section__link a--margin {
@@ -295,23 +297,34 @@ ul[class] {
 .main__price {
   margin-bottom: 12px; }
 
+.main__site-footer {
+  padding-top: 16px;
+  margin: 0 16px;
+  margin-bottom: 23px; }
+
 @media only screen and (min-width: 768px) {
   .main__brands {
     padding-bottom: 32px; }
   .main__devices {
     margin-bottom: 36px; }
   .main__price {
-    margin-bottom: 37px; } }
+    margin-bottom: 37px; }
+  .main__site-footer {
+    padding-top: 32px;
+    margin: 0 24px;
+    margin-bottom: 20px; } }
 
 @media only screen and (min-width: 1440px) {
-  .main__brands {
-    padding-bottom: 50px; }
-  .main__devices {
-    margin-bottom: 50px; }
-  .main--size {
+  .main {
     padding-left: 320px; }
-  .main__price {
-    margin-bottom: 95px; } }
+    .main__brands {
+      padding-bottom: 50px; }
+    .main__devices {
+      margin-bottom: 50px; }
+    .main__price {
+      margin-bottom: 95px; }
+    .main__site-footer {
+      margin-bottom: 32px; } }
 
 .wrapper {
   width: 100vw;
@@ -845,7 +858,9 @@ ul[class] {
 
 @media screen and (min-width: 950px) {
   .price__table {
-    width: 95%; } }
+    width: 95%; }
+  .price__table-td {
+    padding-right: 70px; } }
 
 @media screen and (min-width: 1200px) {
   .price__table {
@@ -858,15 +873,14 @@ ul[class] {
     margin-bottom: 32px; }
   .price__title {
     padding-left: 32px; }
+  .price__table-td {
+    padding-right: 100px; }
   .container {
     padding: 0 32px; } }
 
 .site-footer {
   font-family: 'TTLakes';
   box-sizing: border-box;
-  padding-top: 16px;
-  margin: 0 16px;
-  margin-bottom: 23px;
   line-height: 16px;
   color: #7e7e82;
   text-align: center;
@@ -878,10 +892,7 @@ ul[class] {
 @media screen and (min-width: 768px) {
   .site-footer {
     display: flex;
-    justify-content: space-between;
-    padding-top: 32px;
-    margin: 0 24px;
-    margin-bottom: 20px; }
+    justify-content: space-between; }
     .site-footer__item-copyright {
       text-align: left; }
     .site-footer__item-privacy {
@@ -892,8 +903,7 @@ ul[class] {
 
 @media screen and (min-width: 1440px) {
   .site-footer {
-    z-index: 2;
-    margin-bottom: 32px; }
+    z-index: 2; }
     .site-footer__item-offer {
       width: 340px; } }
 
