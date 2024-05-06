@@ -813,6 +813,9 @@ ul[class] {
 .price__table-btn.btn-oval {
   width: 119px; }
 
+.price__table-td:nth-child(2), .price__table-th:nth-child(2) {
+  padding-right: 70px; }
+
 .price__table-tr:nth-child(1) .price__table-td:first-child {
   border-top-left-radius: 10px; }
 
@@ -865,18 +868,24 @@ ul[class] {
     margin: 0 24px;
     margin-bottom: 24px;
     border-collapse: collapse;
-    border-radius: 6px; }
+    border-radius: 6px;
+    width: 95%; }
   .price__container {
     display: none; }
   .price__title {
     padding-left: 24px; }
+  .price__table-td:nth-child(2), .price__table-th:nth-child(2) {
+    padding-right: 40px;
+    padding-left: 15px; }
   .container {
     padding: 0 24px; } }
 
 @media screen and (min-width: 950px) {
   .price__table {
     width: 95%; }
-  .price__table-td {
+  .price__table-td:nth-child(1), .price__table-th:nth-child(1) {
+    padding-right: 0px; }
+  .price__table-td:nth-child(2), .price__table-th:nth-child(2) {
     padding-right: 70px; } }
 
 @media screen and (min-width: 1200px) {
@@ -890,7 +899,7 @@ ul[class] {
     margin-bottom: 32px; }
   .price__title {
     padding-left: 32px; }
-  .price__table-td {
+  .price__table-td:nth-child(2), .price__table-th:nth-child(2) {
     padding-right: 100px; }
   .container {
     padding: 0 32px; } }
