@@ -1,9 +1,6 @@
 .site-footer {
   font-family: 'TTLakes';
   box-sizing: border-box;
-  padding-top: 16px;
-  margin: 0 16px;
-  margin-bottom: 23px;
   line-height: 16px;
   color: $decoration-color-3;
   text-align: center;
@@ -18,9 +15,6 @@
   .site-footer {
     display: flex;
     justify-content: space-between;
-    padding-top: 32px;
-    margin: 0 24px;
-    margin-bottom: 20px;
     &__item-copyright {
       text-align: left;
     }
@@ -37,7 +31,6 @@
 @media screen and (min-width: 1440px) {
   .site-footer {
     z-index: 2;
-    margin-bottom: 32px;
     &__item-offer {
       width: 340px;
     }

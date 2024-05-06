@@ -180,8 +180,14 @@
 }
 
 @media screen and (min-width: 950px) {
-  .price__table {
-    width: 95%;
+  .price {
+    &__table {
+      width: 95%;
+    }
+    &__table-td {
+      padding-right: 70px;
+      // padding-right: 10vw;
+    }
   }
 }
 @media screen and (min-width: 1200px) {
@@ -199,6 +205,10 @@
     }
     &__title {
       padding-left: 32px;
+    }
+    &__table-td {
+      padding-right: 100px;
+      // padding-right: 10vw;
     }
   }
   .container {

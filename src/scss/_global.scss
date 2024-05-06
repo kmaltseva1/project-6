@@ -56,6 +56,11 @@ ul[class] {
   &__price {
     margin-bottom: 12px;
   }
+  &__site-footer {
+    padding-top: 16px;
+    margin: 0 16px;
+    margin-bottom: 23px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -69,21 +74,27 @@ ul[class] {
     &__price {
       margin-bottom: 37px;
     }
+    &__site-footer {
+      padding-top: 32px;
+      margin: 0 24px;
+      margin-bottom: 20px;
+    }
   }
 }
 @media only screen and (min-width: 1440px) {
   .main {
+    padding-left: 320px;
     &__brands {
       padding-bottom: 50px;
     }
     &__devices {
       margin-bottom: 50px;
     }
-    &--size {
-      padding-left: 320px;
-    }
     &__price {
       margin-bottom: 95px;
+    }
+    &__site-footer {
+      margin-bottom: 32px;
     }
   }
 }
