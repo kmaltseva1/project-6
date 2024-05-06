@@ -124,11 +124,7 @@
     width: 250px;
     margin: 2px 40px 2px 2px;
     padding: 8px; }
-  .services-section .services-section__link:first-child {
-    background: #ffffff;
-    outline: 1px solid #41f6d7;
-    border-radius: 5px; }
-  .services-section__link:hover {
+  .services-section__link:first-child {
     background: #ffffff;
     outline: 1px solid #41f6d7;
     border-radius: 5px; }
@@ -267,7 +263,7 @@ body {
 .lock {
   overflow: hidden; }
 
-.body_wrapper {
+.body-wrapper {
   margin: 0 auto;
   max-width: 1440px; }
 
@@ -792,7 +788,16 @@ ul[class] {
 .price__table-tr {
   height: 64px;
   margin: 16px;
-  border: #eaeaea 1px solid; }
+  position: relative;
+  border-radius: 20px; }
+  .price__table-tr:not(:last-child)::after {
+    content: '';
+    background-color: #eaeaea;
+    position: absolute;
+    width: calc(100% - 48px);
+    height: 1px;
+    top: 100%;
+    left: 24px; }
 
 .price__table-tr:first-child {
   border: none; }
@@ -807,6 +812,18 @@ ul[class] {
 
 .price__table-btn.btn-oval {
   width: 119px; }
+
+.price__table-tr:nth-child(1) .price__table-td:first-child {
+  border-top-left-radius: 10px; }
+
+.price__table-tr:last-child .price__table-td:first-child {
+  border-bottom-left-radius: 10px; }
+
+.price__table-tr:nth-child(1) .price__table-td:last-child {
+  border-top-right-radius: 10px; }
+
+.price__table-tr:last-child .price__table-td:last-child {
+  border-bottom-right-radius: 10px; }
 
 .btn-oval {
   padding: 0;
